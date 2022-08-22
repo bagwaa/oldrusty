@@ -12,9 +12,7 @@ readingTime = true
 hideComments = false
 draft = false
 +++
-# Trait Objects and Dynamic Dispatch
-
-## TLDR;
+#### TLDR;
 
 Trait objects are like generics in that you can use stand ins for variable types, however rather than being calculated at compile time, these are calculated at runtime.  Determining this information at runtime is called **Dynamic Dispatch**
 
@@ -65,7 +63,7 @@ let keeb: Box<dyn Clicky> = Box::new(Keyboard);
 I think putting this in a `Box<>` allows us to move the structure around if we wanted to, I also think that the `Box<>` structure means we can wrap something and force it to be stored on the heap.
 
 
-##### Using Trait Objects within Functions
+#### Using Trait Objects within Functions
 
 Now we can have a bunch of different structs that all implement the same trait, and at runtime we can push all these different types into a `Vec[]`
 
@@ -92,7 +90,7 @@ move_clicky(keeb);
 ```
 
 
-### A Vector with Multiple Types (Heterogeneous)
+#### A Vector with Multiple Types (Heterogeneous)
 
 ```rust
 struct Mouse;
