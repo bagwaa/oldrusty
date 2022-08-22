@@ -6,15 +6,16 @@ theme = "terminal"
 [params]
 centerTheme = true
 themeColor = "orange"
+contentTypeName = "p"
 
 [languages]
   [languages.en]
     languageName = "English"
     title = "OldRusty"
     subtitle = "Musings of a dude learning rust"
-    owner = ""
-    keywords = ""
-    copyright = ""
+    owner = "Richard Bagshaw"
+    keywords = "Richard Bagshaw"
+    copyright = "Content by Richard Bagshaw © 2022"
     menuMore = "Show more"
     readMore = "Read more"
     readOtherPosts = "Read other posts"

@@ -4,16 +4,17 @@ date = "2022-08-22T18:31:54+01:00"
 author = "Richard Bagshaw"
 authorTwitter = "bagwaa" #do not include @
 cover = ""
-tags = ["", ""]
-keywords = ["", ""]
+tags = ["rust", "ownership", "structs"]
+keywords = ["rust", "programming"]
 description = ""
 showFullContent = false
-readingTime = false
+readingTime = true
 hideComments = false
 draft = false
 +++
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl. In pellentesque massa placerat duis ultricies. Aenean vel elit scelerisque mauris. Tristique senectus et netus et malesuada fames ac turpis. Feugiat sed lectus vestibulum mattis. Id aliquet risus feugiat in ante. In nibh mauris cursus mattis. Netus et malesuada fames ac turpis egestas integer eget. Ac tincidunt vitae semper quis lectus. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Sit amet porttitor eget dolor morbi non arcu risus quis. Velit egestas dui id ornare arcu. Tellus id interdum velit laoreet id donec. Nulla pellentesque dignissim enim sit amet venenatis. Non curabitur gravida arcu ac tortor dignissim.
+{{< image src="/images/xp.jpg" alt="Hello Friend" position="center" style="width: 100%;" >}}
 
 Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Et netus et malesuada fames ac turpis. Cras semper auctor neque vitae tempus quam. Nisl rhoncus mattis rhoncus urna neque viverra justo. Interdum velit euismod in pellentesque massa placerat. Pulvinar elementum integer enim neque volutpat. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Nibh tellus molestie nunc non blandit massa enim nec dui. Gravida rutrum quisque non tellus. Adipiscing bibendum est ultricies integer quis auctor elit. In fermentum posuere urna nec tincidunt praesent semper feugiat. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Dui ut ornare lectus sit amet est placerat. Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Massa massa ultricies mi quis hendrerit dolor magna eget est.
 
