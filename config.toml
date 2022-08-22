@@ -25,6 +25,6 @@ contentTypeName = "p"
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "OldRusty"
+      logoText = "OldRusty - notes on a journey with Rust"
       logoHomeLink = "/"
 
