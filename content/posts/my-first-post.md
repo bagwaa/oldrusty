@@ -29,49 +29,31 @@ use std::cmp::Ordering;
 use std::io;
 
 fn main() {
-    // This example is from the book
-    // https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
-
-    // why we have to use a macro here I do not currently know
-    // println!() vs println()
     println!("Guess the number");
 
-    // generate a secret number using the library we imported
-    // start..=end means from the start until the end inclusive of the end number
-    // 1..100 would presumably generate a number between 1 and 99?
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
-    // the main game loop
     loop {
         println!("Please input your guess");
 
-        // create an empty string called guess that is mutable, this will be a mutable STRING
         let mut guess = String::new();
 
-        // read from the standard input and add the input to where we defined the
-        // empty string, if this fails then read_line() will return an enum as the error
-        // and if thats the case then we "catch" it and respond
         io::stdin()
             .read_line(&mut guess)
             .expect("Failed to read line");
 
-        // create a new variable called guess, make it a 32 bit integer, trim it (removes whitespace
-        // and carriage returns when entering the value, ie 5\n), parse as an int
-        // when using the parse method it will return an enum, either Ok or Err if they've provided
-        // a string, then it will return Err which will loop around again for another go
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
 
-        // print out a little message with the value we guessed
         println!("You guessed: {guess}");
 
         match guess.cmp(&secret_number) {
             Ordering::Less => println!("Too small"),
             Ordering::Greater => println!("Too big"),
             Ordering::Equal => {
-                println!("You Win!, the secret number was {secret_number}");
+                println!("You Win!, {}", secret_number);
                 break;
             }
         }
