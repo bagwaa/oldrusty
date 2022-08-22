@@ -1,4 +1,4 @@
-baseURL = 'https://oldrusty.io/'
+baseURL = 'https://imaginative-bublanina-406da2.netlify.app'
 languageCode = 'en-gb'
 title = 'OldRusty'
 theme = "terminal"
