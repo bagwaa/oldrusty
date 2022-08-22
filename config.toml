@@ -1,4 +1,4 @@
-baseURL = 'http://oldrusty.io/'
+baseURL = 'https://oldrusty.io/'
 languageCode = 'en-gb'
 title = 'OldRusty'
 theme = "terminal"
