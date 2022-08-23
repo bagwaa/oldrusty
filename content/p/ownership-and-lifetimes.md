@@ -64,7 +64,7 @@ fn get_int_ref(p1: &i32) -> &i32 {
 
 Lifetimes are a form of generic, so we create the lifetime inside angled brackets.  In the example below we are specifying a lifetime called `<'a>` or "tick a".  Usually lifetimes are just single letters and start from `a` and upwards, so `'a` `'b` `'c` and so on.
 
-In the below example we are again specifying the lifetime `'a` and then reusing that lifetime over the argument we pass in as well as the return type, this ensures that the data we pass in and return will be valid for the same amount of time.
+In the below example we are specifying the lifetime `'a` and then reusing that lifetime over the argument we pass in as well as the return type, this ensures that the data we pass in and return will be valid for the same amount of time.
 
 ```rust
 fn name<'a>(arg: &'a DataType) -> &'a DataType {}
@@ -83,7 +83,7 @@ If you write a function that accepts references as arguments then the compiler w
 
 ### Lifetime Mismatch
 
-If we use the following example you will be met with a mismatch error from the compiler, this is because the return type is only around for the same length of time as `s1` which uses the `'a` lifetime.  In our program we may return s2, which has a lifetime of `'b`.  This means the reference we return is not guarunteed to live the same amount of time.
+If we use the following example you will be met with a mismatch error from the compiler, this is because the return type is only around for the same length of time as `s1` which uses the `'a` lifetime.  In our program we may return `s2`, which has a lifetime of `'b`.  This means the reference we return is not guarunteed to live the same amount of time.
 
 ```rust
 fn main() {
@@ -173,7 +173,9 @@ This reserved lifetime indicates that the variable should remain in memory for t
 
 #### Further Resources
 
-By far the best explanation I have found on lifetimes comes in the form of a YouTube video by Doug Millford, he will explain everything you need to know in this great video.
+By far the best explanation I have found on lifetimes comes in the form of a YouTube video by Doug Millford, he will explain everything you need to know in this video.  All my learnings on lifetimes thus far have been from a few sources, but I can attribute most of my knowledge to this single video.
+
+Thanks Doug!
 
 {{< youtube 1QoT9fmPYr8 >}}
 
