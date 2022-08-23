@@ -17,7 +17,7 @@ Lifetimes in Rust are a way to tell the compiler that borrowed data will be vali
 
 Another way to say it, Lifetimes enforce a piece of memory is still valid for a reference.
 
-Sometimes we may need to tweak the lifetime of a piece of borrowed data when storing it in a struct or enum or maybe when returning borrowed data from functions.
+Sometimes we may need to tweak the lifetime of a piece of borrowed data when storing it in a struct, enum or maybe when returning borrowed data from a function.
 
 ```rust
 fn main() {
@@ -30,13 +30,15 @@ fn main() {
 }
 ```
 
-In this example we create a variable called a, and then inside another scope we create b and assign a String.  b now points to a place in memory on the heap that stores the string "foo".  We then assign a borrow from b to a.  However at the end of this scope, b is destroyed leaving a pointing at nothing.  This is picked up by the compiler with the error `b does not live long enough`.
+In this example we create a variable called `a`, and then inside another scope we create `b` and assign a String.  `b` now points to a place in memory on the heap that stores the string `"foo"`.
+
+We then assign a borrow from `b` to `a`.  However at the end of this scope, `b` is destroyed leaving `a` pointing at nothing.  This is picked up by the compiler with the error `b does not live long enough`.
 
 Lifetimes are really about making sure memory doesn't get cleaned up before a reference can use it.
 
 ### Functions returning borrowed data
 
-In the example below we would get another error, because we are returning a borrowed value when there is no value for it to borrow from, Rust is smart enough to know that nothing was past into that function scope, so anything we borrow from must have been created within the function.  This presents a problem like we had in the first example because this means the value we are borrowing from will be going out of scope when the function ends.
+In the example below we can see another compiler error, because we are returning a borrowed value when there is no value for it to borrow from, Rust is smart enough to know that nothing was passed into that function scope, so anything we borrow from must have been created within the function.  This presents a problem like we had in the first example because this means the value we are borrowing from will be going out of scope when the function ends.
 
 > "The life of the memory we are returning is not long enough" - Doug Millford
 
