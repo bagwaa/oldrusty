@@ -2,6 +2,7 @@ baseURL = 'https://oldrusty.io/'
 languageCode = 'en-gb'
 title = 'OldRusty'
 theme = "terminal"
+disqusShortname = 'oldrusty'
 
 [params]
 centerTheme = true
