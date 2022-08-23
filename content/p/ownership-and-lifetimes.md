@@ -50,9 +50,9 @@ fn get_int_ref() -> &i32 {
 }
 ```
 
-Instead of returning a reference in the above example, we just returned the value and transfered ownership, then this would be perfectly acceptable.
+Instead of returning a reference in the above example, if we just returned the value and transfered ownership, then this would be perfectly acceptable.
 
-Let's look at another example, except this time we will pass in a value and return a value.  In this example we pass in a reference to an `i32` and we return a reference to an `i32` rust has no problem with this because it knows that we can pass a reference out from this function that originated from outside of it.  The scope providing the reference is the same exact scope that will be receiving the output from the function.
+Let's look at another example, however this time we will pass in a reference to a value and return a reference to a value.  In this example we pass in a reference to an `i32` and we return a reference to an `i32` rust has no problem with this because it knows that we can pass a reference out from this function that originated from outside of it.  The scope providing the reference is the same exact scope that will be receiving the output from the function.
 
 ```rust
 fn get_int_ref(p1: &i32) -> &i32 {
@@ -61,6 +61,8 @@ fn get_int_ref(p1: &i32) -> &i32 {
 ```
 
 ### Lifetime Syntax - Functions
+
+Lifetimes are a form of generic, so we create the lifetime inside angled brackets.  In the example below we are specifying a lifetime called `<'a>` or "tick a".  Usually lifetimes are just single letters and start from `a` and upwards, so `'a` `'b` `'c` and so on.
 
 In the below example we are again specifying the lifetime `'a` and then reusing that lifetime over the argument we pass in as well as the return type, this ensures that the data we pass in and return will be valid for the same amount of time.
 
@@ -146,7 +148,6 @@ fn compare_string_slices<'a>(p1: &'a str, p2: &'a str) -> &'a str {
 
 ### Lifetime Syntax - Structures
 
-Lifetimes are a form of generic, so we create the lifetime inside angled brackets.  In the example below we are specifying a lifetime called `<'a>` or "tick a".  Usually lifetimes are just single letters and start from a and upwards, so `'a` `'b` `'c` and so on.
 
 In the example below we can see that the `field` has a piece of **borrowed** data in the struct with a lifetime of `'a` this means the data in this field will still be around even when the Cat struct has been destroyed.  The `'a` tells Rust that the field data we are giving this structure, exists before we construct the Cat.
 
