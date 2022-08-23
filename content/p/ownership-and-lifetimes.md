@@ -19,6 +19,8 @@ Another way to say it, Lifetimes enforce a piece of memory is still valid for a 
 
 Sometimes we may need to tweak the lifetime of a piece of borrowed data when storing it in a struct, enum or maybe when returning borrowed data from a function.
 
+### Why do we need lifetimes?
+
 ```rust
 fn main() {
     let a;
