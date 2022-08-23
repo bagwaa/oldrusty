@@ -13,7 +13,7 @@ hideComments = false
 draft = false
 +++
 
-Lifetimes in Rust are a way to tell the compiler that borrowed data will be valid at a specific point in time.   Even without knowing it lifetimes are applied to all borrowed data in Rust, However, for the most part we don't need to concern ourselves with it as the compiler handles them for us at compile time.
+Lifetimes in Rust are a mechanism to tell the compiler that borrowed data (references) will be valid at a specific point in time.   Even without knowing it lifetimes are applied to all borrowed data in Rust, However, for the most part we don't need to concern ourselves with it as the compiler handles them for us at compile time.
 
 Another way to say it, Lifetimes enforce a piece of memory is still valid for a reference.
 
