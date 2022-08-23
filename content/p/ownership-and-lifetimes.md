@@ -179,6 +179,8 @@ Thanks Doug!
 
 {{< youtube 1QoT9fmPYr8 >}}
 
+- Official Documentation : https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html
+
 #### Summary
 
 Lifetimes are a tricky to think about as a concept and may take a few attempts to understand correctly.
