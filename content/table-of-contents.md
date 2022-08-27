@@ -18,10 +18,20 @@ Each post is colour coded as follows :-
 
 - ##### Memory Management
     - 🟢 [ Ownership and Lifetimes ](/p/ownership-and-lifetimes)
+- ##### Testing
+    - 🔴 [ Testing Basics ]()
+- ##### Types
+    - 🔴 [ Vectors ]()
+    - 🔴 [ HashMaps ]()
+- ##### Data Management
+    - 🔴 [ Closures ]()
+    - 🔴 [ Map and Iterators ]()
+    - 🔴 [ Gathering Command Line Input ]()
 - ##### Structures
     - 🟢 [ Enums ](/p/enums)
     - 🔴 [ The Option Type ]()
     - 🔴 [ The Result Type ]()
-- ##### Traits
+- ##### Traits and Generics
     - 🔴 [ Traits ]()
+    - 🔴 [ Generics ]()
     - 🟡 [ Trait Objects and Dynamic Dispatch ](/p/trait-objects-and-dynamic-dispatch/)
