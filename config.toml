@@ -29,3 +29,12 @@ contentTypeName = "p"
       logoText = "OldRusty - a journey with Rust"
       logoHomeLink = "/"
 
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+      [[languages.en.menu.main]]
+        identifier = "table-of-contents"
+        name = "Table of Contents"
+        url = "/table-of-contents"
