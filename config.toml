@@ -16,7 +16,7 @@ contentTypeName = "p"
     subtitle = "Musings of a dude learning rust"
     owner = "bagwaa"
     keywords = "bagwaa"
-    copyright = "Content by Richard Bagshaw © 2022"
+    copyright = 'Content by <a rel="me" href="https://phpc.social/@bagwaa">Richard Bagshaw</a> © 2022'
     menuMore = "🦀 Show more"
     readMore = "🦀 Read more"
     readOtherPosts = "Read other posts"
